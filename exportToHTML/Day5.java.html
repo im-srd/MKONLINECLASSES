@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Day5.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Day5.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Day5 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String args[]){</span>
+<span class="s2">//         Loops</span>
+<span class="s2">//        for loop</span>
+    <span class="s2">/* 
+        for (int i=0; i&lt;10; i++) 
+    { 
+        System.out.println(i); 
+    } 
+    */</span>
+
+
+    <span class="s2">/* WHILE LOOP 
+    int num = 10; 
+    while (num&gt;10 &amp;&amp; num&lt;16) 
+    { 
+        System.out.println(num); 
+        num = num+1; 
+    } 
+    */</span>
+
+    <span class="s2">/* 
+    int num = 10; 
+     /* DO WHILE LOOP 
+    do 
+    { 
+        System.out.println(num); 
+        num = num+1; 
+    } 
+    while(num&gt;10 &amp;&amp; num&lt;16); 
+    */</span>
+<span class="s2">//        How to declare an array</span>
+<span class="s2">//        int arr1[] = {1,2,3,4,5,6,7};</span>
+<span class="s2">//        int []arr2 = new int[5];</span>
+<span class="s2">//        arr2[0] = 11; arr2[1] = 22; arr2[2] = 33; arr2[3] = 44; arr2[4] = 55;</span>
+
+<span class="s2">//        Iterating through FOR LOOP</span>
+<span class="s2">//        for (int i = 0; i&lt;arr1.length; i++)</span>
+<span class="s2">//        {</span>
+<span class="s2">//            System.out.println(arr1[i]);</span>
+<span class="s2">//        }</span>
+        <span class="s2">/* 
+        Iterating through FOR EACH LOOP 
+        for (int i: arr2) { 
+            System.out.println(i); 
+        } 
+        */</span>
+<span class="s2">//       int num = 5;</span>
+<span class="s2">//        System.out.println(num); // --&gt; 5</span>
+<span class="s2">//        System.out.println(num--); // --&gt; 5 --&gt; 5-1=4</span>
+<span class="s2">//        System.out.println(num);  // --&gt; 4</span>
+<span class="s2">//</span>
+<span class="s2">//        int num2 = 5;</span>
+<span class="s2">//        System.out.println(num2); // --&gt; 5</span>
+<span class="s2">//        System.out.println(++num2); // --&gt; 5+1=6 --&gt; 6</span>
+<span class="s2">//        System.out.println(num2); // --&gt; 6</span>
+
+        <span class="s0">int </span><span class="s1">num = </span><span class="s3">2</span><span class="s0">; </span><span class="s2">//--&gt; 5</span>
+        <span class="s1">System.out.println(num++ + ++num + num++ + num)</span><span class="s0">;</span>
+<span class="s2">//        int m = 2;</span>
+<span class="s2">//        while (m &lt; 20) {</span>
+<span class="s2">//            m = m++ * 2; // --&gt; 2 --&gt; 2* 2 = 4</span>
+<span class="s2">//            if (m % 4 == 0) {</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            }</span>
+<span class="s2">//            System.out.print(m + &quot; &quot;);</span>
+<span class="s2">//        }</span>
+        <span class="s2">/* QUESTION 1 
+        int m = 2; 
+        while (m &lt; 20) { 
+        m = m++ * 2; 
+        if (m % 4 == 0) { 
+            break; 
+            } 
+        System.out.print(m + &quot; &quot;); 
+        } 
+        */</span>
+
+        <span class="s2">/* QUESTION 2 
+        int n = 3; 
+        while (n &lt; 15) { 
+            n += ++n; 
+            if (n % 5 == 0) { 
+                break; 
+            } 
+            System.out.print(n + &quot; &quot;); 
+        } 
+ 
+        */</span>
+
+        <span class="s2">/* QUESTION 3 
+        int x = 2; 
+        while (x &lt; 10) { 
+            x = x * 2; 
+            if (x % 4 == 0) { 
+                continue; 
+            } 
+            System.out.print(x + &quot; &quot;); 
+        } 
+ 
+        */</span>
+
+        <span class="s2">/* QUESTION 4 
+        int j = 10; 
+        while (j &gt; 0) { 
+            j--; 
+            if (j % 2 == 0) { 
+                continue; 
+            } 
+            System.out.print(j + &quot; &quot;); 
+        } 
+ 
+        */</span>
+
+        <span class="s2">/* QUESTION 5 
+        int i = 0; 
+        while (true) { 
+            if (++i &gt; 5) { 
+                break; 
+            } 
+            System.out.print(i + &quot; &quot;); 
+        } 
+ 
+         */</span>
+
+        <span class="s2">/* QUESTION 6 
+ 
+        for (int i = 1; i &lt;= 15; i++) { 
+            if (i % 3 == 0 &amp;&amp; i % 5 == 0) { 
+                System.out.println(&quot;FizzBuzz&quot;); 
+            } else if (i % 3 == 0) { 
+                System.out.println(&quot;Fizz&quot;); 
+            } else if (i % 5 == 0) { 
+                System.out.println(&quot;Buzz&quot;); 
+            } else { 
+                System.out.println(i); 
+            } 
+        } 
+ 
+         */</span>
+
+        
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s2">/* 
+Array 1     Array 2 
+1           11 
+2           22 
+3           33 
+4           44 
+5           55 
+6 
+7 
+*/</span></pre>
+</body>
+</html>

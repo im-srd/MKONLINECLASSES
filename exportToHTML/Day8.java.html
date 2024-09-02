@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Day8.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Day8.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Arrays</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Day8 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String args[]){</span>
+        <span class="s2">// How to declare an Array</span>
+        <span class="s0">int </span><span class="s1">num[] = {</span><span class="s3">10</span><span class="s0">, </span><span class="s3">20</span><span class="s0">, </span><span class="s3">30</span><span class="s0">, </span><span class="s3">40 </span><span class="s0">,</span><span class="s3">50</span><span class="s1">}</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">age[] = </span><span class="s0">new int</span><span class="s1">[</span><span class="s3">5</span><span class="s1">]</span><span class="s0">;</span>
+        <span class="s1">age[</span><span class="s3">0</span><span class="s1">] = </span><span class="s3">21</span><span class="s0">;</span>
+        <span class="s1">age[</span><span class="s3">1</span><span class="s1">] = </span><span class="s3">22</span><span class="s0">;</span>
+        <span class="s1">age[</span><span class="s3">2</span><span class="s1">] = </span><span class="s3">23</span><span class="s0">;</span>
+        <span class="s1">age[</span><span class="s3">3</span><span class="s1">] = </span><span class="s3">24</span><span class="s0">;</span>
+        <span class="s1">age[</span><span class="s3">4</span><span class="s1">] = </span><span class="s3">25</span><span class="s0">;</span>
+
+<span class="s2">//        System.out.println(num);</span>
+
+        <span class="s2">/* 
+        for (int elements : num){ 
+            System.out.print(elements+&quot;, &quot;); 
+        } 
+ 
+        int max = num[0]; 
+        for (int n:num){ 
+            if (n&gt;max){ 
+                max = n; 
+            } 
+        } 
+        System.out.println(&quot;The maximum value in num array is &quot;+max); 
+*/</span>
+        <span class="s2">/* 
+        l = [1,2,3,4,5] 
+        print(l) 
+        o/p : [1,2,3,4,5] 
+         [[1,2,3],[11,22,33],[111,222,333]] --&gt; 2d arrays 
+         */</span>
+
+        <span class="s2">// Arrays : Arrays is pre defined class in java which is used to access some function which are useful in array.</span>
+<span class="s2">//        System.out.println(Arrays.toString(num));</span>
+<span class="s2">//        int array2d[][] = {{1,2,3},{4,5,6},{7,8,9}};</span>
+<span class="s2">//        System.out.println(Arrays.deepToString(array2d));</span>
+<span class="s2">//</span>
+<span class="s2">//        int num2[] = {7,3,8,33,77,4,-110};</span>
+<span class="s2">//        System.out.println(&quot;Before Sorting : &quot;+Arrays.toString(num2));</span>
+<span class="s2">//        Arrays.sort(num2);</span>
+<span class="s2">//        System.out.println(&quot;After Sorting : &quot;+Arrays.toString(num2));</span>
+<span class="s2">//        // num2 --&gt; [-110, 3,4,7,8,33,77] --&gt; Ascending order</span>
+<span class="s2">//</span>
+<span class="s2">//        int reverseNum2[] = new int[num2.length];</span>
+<span class="s2">//        Arrays.fill(reverseNum2, 100);</span>
+<span class="s2">//        // reverseNum2 --&gt; [0,0,0,0,0,0,0]</span>
+<span class="s2">////        int j=0;</span>
+<span class="s2">//        for (int j=0,i=num2.length-1; i&gt;=0; j++,i--){ // i --&gt; 6-5-4-3-2-1-0</span>
+<span class="s2">//            reverseNum2[j] = num2[i];           // j --&gt; 0-1-2-3-4-5-6</span>
+<span class="s2">//            // j++;</span>
+<span class="s2">//</span>
+<span class="s2">//        }</span>
+<span class="s2">//        System.out.println(Arrays.toString(reverseNum2));</span>
+<span class="s2">//</span>
+    <span class="s1">String names[] = </span><span class="s0">new </span><span class="s1">String[</span><span class="s3">2</span><span class="s1">]</span><span class="s0">;</span>
+    <span class="s1">Arrays.fill(names</span><span class="s0">, </span><span class="s4">&quot;Not Provided yet&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(Arrays.toString(names))</span><span class="s0">;</span>
+        <span class="s1">names[</span><span class="s3">0</span><span class="s1">] = </span><span class="s4">&quot;Tarun&quot;</span><span class="s0">;</span>
+        <span class="s1">System.out.println(Arrays.toString(names))</span><span class="s0">;</span>
+
+
+    <span class="s1">}</span>
+    <span class="s1">}</span>
+
+</pre>
+</body>
+</html>

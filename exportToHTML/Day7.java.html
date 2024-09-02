@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Day7.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Day7.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Day7 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String args[]){</span>
+        <span class="s1">Scanner sc = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s2">// Switch Statements</span>
+<span class="s2">//        System.out.println(&quot;Enter your choice (1-7):&quot;);</span>
+<span class="s2">//        int choice = sc.nextInt();</span>
+<span class="s2">//        switch(choice)</span>
+<span class="s2">//        {</span>
+<span class="s2">//            case 1: // choice == 1</span>
+<span class="s2">//                System.out.println(&quot;MONDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            case 2: // choice == 2</span>
+<span class="s2">//                System.out.println(&quot;TUESDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            case 3:</span>
+<span class="s2">//                System.out.println(&quot;WEDNESDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            case 4:</span>
+<span class="s2">//                System.out.println(&quot;THRUSHDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            case 5:</span>
+<span class="s2">//                System.out.println(&quot;FRIDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            case 6:</span>
+<span class="s2">//                System.out.println(&quot;SATURDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//            case 7:</span>
+<span class="s2">//                System.out.println(&quot;SUNDAY&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//</span>
+<span class="s2">//            default:</span>
+<span class="s2">//                System.out.println(&quot;INVALID OPTION&quot;);</span>
+<span class="s2">//                break;</span>
+<span class="s2">//        }</span>
+<span class="s2">/*        int dayOfWeek = sc.nextInt(); 
+        String dayName = switch(dayOfWeek) { 
+            case 1 -&gt; &quot;Sunday&quot;; 
+            case 2 -&gt; &quot;Monday&quot;; 
+            case 3 -&gt; &quot;Tuesday&quot;; 
+            case 4 -&gt; &quot;Wednesday&quot;; 
+            case 5 -&gt; &quot;Thrushday&quot;; 
+            case 6 -&gt; &quot;Friday&quot;; 
+            case 7 -&gt; &quot;Saturday&quot;; 
+            default -&gt; &quot;INVALID&quot;; 
+        }; 
+ 
+        System.out.println(&quot;The day is &quot;+ dayName); 
+        System.out.println(dayName); 
+*/</span>
+        <span class="s2">/* 
+        int number = 2; 
+        String result = &quot;&quot;; // Empty string 
+        switch(number){ 
+            case 1: 
+                result+=&quot;One&quot;; 
+            case 2: 
+                result+=&quot;Two&quot;; 
+            case 3: 
+                result+=&quot;Three&quot;; 
+                break; 
+            default: 
+                result+=&quot;Default&quot;; 
+        } 
+        System.out.println(result); 
+*/</span>
+        <span class="s2">/* 
+        String day = &quot;Monday&quot;; 
+        String typeOfDay = &quot;&quot;; 
+        switch(day){ 
+            case &quot;Monday&quot;: break; 
+            case &quot;Tuesday&quot;: 
+            case &quot;Wednesday&quot;: 
+            case &quot;Thursday&quot;: 
+            case &quot;Friday&quot;: 
+                typeOfDay = &quot;Weekday&quot;; 
+                break; 
+            case &quot;Saturday&quot;: 
+            case &quot;Sunday&quot;: 
+                typeOfDay = &quot;Weekend&quot;; 
+                break; 
+            default: 
+                typeOfDay = &quot;Invalid Day&quot;; 
+        } 
+        System.out.println(&quot;Day Type : &quot;+typeOfDay); 
+        */</span>
+
+        <span class="s0">int </span><span class="s1">[]numbers = {</span><span class="s3">1</span><span class="s0">,</span><span class="s3">2</span><span class="s0">,</span><span class="s3">3</span><span class="s0">,</span><span class="s3">4</span><span class="s0">,</span><span class="s3">5</span><span class="s1">}</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">sum = </span><span class="s3">0</span><span class="s0">;</span>
+
+        <span class="s0">for </span><span class="s1">(</span><span class="s0">int </span><span class="s1">num : numbers) {</span>
+            <span class="s0">switch </span><span class="s1">(num) {</span>
+                <span class="s0">case </span><span class="s3">1</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s3">3</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s3">5</span><span class="s1">:</span>
+                    <span class="s1">sum += num</span><span class="s0">;</span>
+                    <span class="s0">break;</span>
+                <span class="s0">case </span><span class="s3">2</span><span class="s1">:</span>
+                <span class="s0">case </span><span class="s3">4</span><span class="s1">:</span>
+                    <span class="s1">sum -= num</span><span class="s0">;</span>
+                    <span class="s0">break;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s1">System.out.println(</span><span class="s4">&quot;Sum : &quot;</span><span class="s1">+sum)</span><span class="s0">;</span>
+ <span class="s2">// num = 5</span>
+        <span class="s2">// sum = 0+1-2+3-4+5 = 3</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
